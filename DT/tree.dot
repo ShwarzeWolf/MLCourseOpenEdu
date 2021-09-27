@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Glucose <= 154.5\nentropy = 0.94\nsamples = 528\nvalue = [340, 188]\nclass = 0", fillcolor="#f3c7a6"] ;
+1 [label="BMI <= 26.35\nentropy = 0.84\nsamples = 445\nvalue = [324, 121]\nclass = 0", fillcolor="#efb083"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+3 [label="entropy = 0.22\nsamples = 114\nvalue = [110, 4]\nclass = 0", fillcolor="#e68640"] ;
+1 -> 3 ;
+4 [label="Glucose <= 99.5\nentropy = 0.94\nsamples = 331\nvalue = [214, 117]\nclass = 0", fillcolor="#f3c6a5"] ;
+1 -> 4 ;
+5 [label="entropy = 0.53\nsamples = 91\nvalue = [80, 11]\nclass = 0", fillcolor="#e99254"] ;
+4 -> 5 ;
+6 [label="Age <= 28.5\nentropy = 0.99\nsamples = 240\nvalue = [134, 106]\nclass = 0", fillcolor="#fae5d6"] ;
+4 -> 6 ;
+7 [label="entropy = 0.87\nsamples = 95\nvalue = [67, 28]\nclass = 0", fillcolor="#f0b68c"] ;
+6 -> 7 ;
+8 [label="entropy = 1.0\nsamples = 145\nvalue = [67, 78]\nclass = 1", fillcolor="#e3f1fb"] ;
+6 -> 8 ;
+2 [label="entropy = 0.71\nsamples = 83\nvalue = [16, 67]\nclass = 1", fillcolor="#68b4eb"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
